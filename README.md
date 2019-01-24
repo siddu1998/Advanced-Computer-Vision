@@ -1,2 +1,2 @@
-# Advanced-Computer-Vision-
+# Advanced-Computer-Vision
 Preparation for internship 
