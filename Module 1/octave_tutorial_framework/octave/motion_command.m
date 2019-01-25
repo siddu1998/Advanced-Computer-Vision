@@ -7,5 +7,7 @@ function [x] = motion_command(x, u)
 %TODO: update x according to the motion represented by u
 
 %TODO: remember to normalize theta by calling normalize_angle for x(3)
-
+  x(1) = x(1) + u.t * cos(x(3)+u.r1);
+  x(2) = x(2) + u.t * sin(x(3)+u.r1);
+  x(3) = normalize_angle(x(3) + u.r1 + u.r2)
 end
